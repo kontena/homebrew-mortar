@@ -121,11 +121,9 @@ class Mortar < Formula
 
     (bin/"mortar").write_env_script(libexec/"bin/mortar", env)
 
-    begin
-      bash_completion.install "opt/bash-completion.sh" => "kontena"
-      zsh_completion.install "opt/bash-completion.sh" => "_kontena"
-    rescue Errno::ENOENT
-      # can be removed after 0.2 is out
+    if build.head? || build.devel? # Should be removed once 0.2 is out
+      bash_completion.install "opt/bash-completion.sh" => "mortar.bash"
+      zsh_completion.install_symlink bash_completion/"mortar.bash" => "_mortar"
     end
   end
 
