@@ -10,7 +10,6 @@ gems = {}
 Dir.chdir('..') if Dir.pwd.end_with?('build')
 
 Dir['mortar/vendor/cache/*.gem'].sort_by { |f| File.basename(f) }.each do |gemfile|
-  puts gemfile
   next if gemfile.end_with?('.')
   gem_name = gemfile[/.*\/(.+?)\-\d+\.\d+\..+?\.gem/, 1]
   gem_version = gemfile[/\-(\d+\.\d+\..+?)\.gem/, 1]

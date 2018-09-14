@@ -31,7 +31,4 @@ bundle package
 
 cd ..
 
-ruby build/update_resources.rb "$latest" > build/new_formula.rb
-diff Formula/mortar.rb build/new_formula.rb
-mv -f build/new_formula.rb Formula/mortar.rb
-
+ruby build/update_resources.rb "$latest" > Formula/mortar.rb
