@@ -121,9 +121,9 @@ class Mortar < Formula
 
     (bin/"mortar").write_env_script(libexec/"bin/mortar", env)
 
-    if File.exist?('opt/bash-completion.bash')
-      bash_completion.install "opt/bash-completion.bash" => "kontena"
-      zsh_completion.install "opt/bash-completion.bash" => "_kontena"
+    if File.exist?('opt/bash-completion.sh')
+      bash_completion.install "opt/bash-completion.sh" => "kontena"
+      zsh_completion.install "opt/bash-completion.sh" => "_kontena"
     end
   end
 
