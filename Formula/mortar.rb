@@ -7,8 +7,8 @@ class Mortar < Formula
 
   stable do
     url "https://github.com/kontena/mortar.git",
-    :tag => "v0.1.0",
-    :revision => "6fd4aa7367aa9dc629b8f6a6991081e94397aab6"
+    :tag => "v0.2.0",
+    :revision => "03e3a87c9dfc3b7575051baa934d135ac2fc302f"
 
     resource "clamp" do
       url "https://rubygems.org/gems/clamp-1.3.0.gem"
@@ -65,6 +65,11 @@ class Mortar < Formula
       sha256 "f24eb51982ea56edf9a7e224bf30a7f91ba72c8971bfe88163eea134a3995d68"
     end
 
+    resource "equatable" do
+      url "https://rubygems.org/gems/equatable-0.5.0.gem"
+      sha256 "fdc8669f9bdc993be5cb6c08ec86343a7e87756e33c68ff5f63dfaa9e44f55ea"
+    end
+
     resource "excon" do
       url "https://rubygems.org/gems/excon-0.62.0.gem"
       sha256 "624dfbd6659dfdbefd213019d94598c4d47a713936819b6bb729303412e08996"
@@ -85,6 +90,11 @@ class Mortar < Formula
       sha256 "e9d90c1aec1998f94d5753170fcf151aa6985f4041c9e4a7b0f401a548a35622"
     end
 
+    resource "pastel" do
+      url "https://rubygems.org/gems/pastel-0.7.2.gem"
+      sha256 "e1d21dd8fb965e5052d1b16164a777fc450c6e187bf199f833a9de3f5303c3f9"
+    end
+
     resource "recursive-open-struct" do
       url "https://rubygems.org/gems/recursive-open-struct-1.1.0.gem"
       sha256 "6c5029e9d7d8b2b295bce33089b4530992d534890b5c737ccfbc16575ff4cc71"
@@ -94,7 +104,13 @@ class Mortar < Formula
       url "https://rubygems.org/gems/rouge-3.2.1.gem"
       sha256 "4e988e00c9f10250aaf794e61ff743d23356a38a8f1ed1448f3cd8ca857de940"
     end
+
+    resource "tty-color" do
+      url "https://rubygems.org/gems/tty-color-0.4.3.gem"
+      sha256 "731d0dd02da9c63aca126001153440df8971fee9163532064c46e6d58deae57f"
+    end
   end
+
 
   def install
     ENV["GEM_HOME"] = libexec
@@ -121,10 +137,8 @@ class Mortar < Formula
 
     (bin/"mortar").write_env_script(libexec/"bin/mortar", env)
 
-    if build.head? || build.devel? # Should be removed once 0.2 is out
-      bash_completion.install "opt/bash-completion.sh" => "mortar.bash"
-      zsh_completion.install_symlink bash_completion/"mortar.bash" => "_mortar"
-    end
+    bash_completion.install "opt/bash-completion.sh" => "mortar.bash"
+    zsh_completion.install_symlink bash_completion/"mortar.bash" => "_mortar"
   end
 
   test do
