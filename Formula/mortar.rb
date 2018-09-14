@@ -121,11 +121,13 @@ class Mortar < Formula
 
     (bin/"mortar").write_env_script(libexec/"bin/mortar", env)
 
-    bash_completion.install "opt/bash-completion.bash" => "kontena"
-    zsh_completion.install "opt/bash-completion.bash" => "_kontena"
+    if File.exist?('opt/bash-completion.bash')
+      bash_completion.install "opt/bash-completion.bash" => "kontena"
+      zsh_completion.install "opt/bash-completion.bash" => "_kontena"
+    end
   end
 
   test do
-    assert_match "Options:", shell_output("#{bin}/mortar fire --help")
+    assert_match "Options:", shell_output("#{bin}/mortar --help")
   end
 end
