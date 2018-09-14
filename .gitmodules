@@ -1,0 +1,3 @@
+[submodule "mortar"]
+	path = mortar
+	url = https://github.com/kontena/mortar.git
