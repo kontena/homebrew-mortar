@@ -7,8 +7,8 @@ class Mortar < Formula
 
   stable do
     url "https://github.com/kontena/mortar.git",
-    :tag => "v0.2.0",
-    :revision => "03e3a87c9dfc3b7575051baa934d135ac2fc302f"
+    :tag => "v0.3.0",
+    :revision => "56614cbd499ae10a5e1bcf9396d989678600d6ec"
 
     resource "clamp" do
       url "https://rubygems.org/gems/clamp-1.3.0.gem"
@@ -16,8 +16,8 @@ class Mortar < Formula
     end
 
     resource "concurrent-ruby" do
-      url "https://rubygems.org/gems/concurrent-ruby-1.0.5.gem"
-      sha256 "8ee1206d0145a51f9ebdf735e4b5d6a957e085323b9db32e9b04f557dcd774a0"
+      url "https://rubygems.org/gems/concurrent-ruby-1.1.3.gem"
+      sha256 "6b4bf154eb36502635143198425c35fc3262b3c088d7df179704bb5beed409a3"
     end
 
     resource "deep_merge" do
@@ -61,8 +61,8 @@ class Mortar < Formula
     end
 
     resource "dry-types" do
-      url "https://rubygems.org/gems/dry-types-0.13.2.gem"
-      sha256 "f24eb51982ea56edf9a7e224bf30a7f91ba72c8971bfe88163eea134a3995d68"
+      url "https://rubygems.org/gems/dry-types-0.13.3.gem"
+      sha256 "beb6548b40af545e7066a6f8ff0cc156614172cfd31fa0da482f2779c33bea0d"
     end
 
     resource "equatable" do
@@ -85,9 +85,24 @@ class Mortar < Formula
       sha256 "5d506a7d2723d5592dc121b9928e4931742730131f22a1a37649df1c1e2e63db"
     end
 
+    resource "jsonpath" do
+      url "https://rubygems.org/gems/jsonpath-0.9.6.gem"
+      sha256 "ed341783603cc77315e01fecacc166f5092b6f692ae3cbfadabc0179390d241a"
+    end
+
     resource "k8s-client" do
-      url "https://rubygems.org/gems/k8s-client-0.4.2.gem"
-      sha256 "e9d90c1aec1998f94d5753170fcf151aa6985f4041c9e4a7b0f401a548a35622"
+      url "https://rubygems.org/gems/k8s-client-0.6.2.gem"
+      sha256 "ccc5ca4d2b7a9c831c7d600856430cec0c3a7aed9e74f07a636265b121d34fbd"
+    end
+
+    resource "multi_json" do
+      url "https://rubygems.org/gems/multi_json-1.13.1.gem"
+      sha256 "db8613c039b9501e6b2fb85efe4feabb02f55c3365bae52bba35381b89c780e6"
+    end
+
+    resource "necromancer" do
+      url "https://rubygems.org/gems/necromancer-0.4.0.gem"
+      sha256 "7fab7bc465a634365d354341a0f7a57a6928b7b06777442c3b377fb36783366d"
     end
 
     resource "pastel" do
@@ -101,15 +116,51 @@ class Mortar < Formula
     end
 
     resource "rouge" do
-      url "https://rubygems.org/gems/rouge-3.2.1.gem"
-      sha256 "4e988e00c9f10250aaf794e61ff743d23356a38a8f1ed1448f3cd8ca857de940"
+      url "https://rubygems.org/gems/rouge-3.3.0.gem"
+      sha256 "140fb42bd45cde9c11bd5ea2fee3d1e6d10204d7aa33ac37eadf73a445d42fb6"
+    end
+
+    resource "strings" do
+      url "https://rubygems.org/gems/strings-0.1.4.gem"
+      sha256 "cab79f5b836b850cc63ee38fddc1d3ccb627cf303646f0a706d82c270a2b35de"
+    end
+
+    resource "strings-ansi" do
+      url "https://rubygems.org/gems/strings-ansi-0.1.0.gem"
+      sha256 "3ef265ac7eb13eceeb9d1f475dff8d2f85f7ee6a0345b5de554a756523ffa6cb"
+    end
+
+    resource "to_regexp" do
+      url "https://rubygems.org/gems/to_regexp-0.2.1.gem"
+      sha256 "3b458ccd12e850816ca54b38fc592422a9bf412bb2d604ba23d4506ca15beae5"
     end
 
     resource "tty-color" do
       url "https://rubygems.org/gems/tty-color-0.4.3.gem"
       sha256 "731d0dd02da9c63aca126001153440df8971fee9163532064c46e6d58deae57f"
     end
+
+    resource "tty-screen" do
+      url "https://rubygems.org/gems/tty-screen-0.6.5.gem"
+      sha256 "816b3482054c5ff781b1232852c8f3a88bf5dac099a56ee9621ed506fd93f72b"
+    end
+
+    resource "tty-table" do
+      url "https://rubygems.org/gems/tty-table-0.10.0.gem"
+      sha256 "8f7dc9bfc3ffbea453bb9c302ad34adc8411b2ce5fab4bce5faeded283cc7916"
+    end
+
+    resource "unicode-display_width" do
+      url "https://rubygems.org/gems/unicode-display_width-1.4.0.gem"
+      sha256 "a72802fd6345c0da220e8088b27f1800924b74d222621a06477757769b5e8000"
+    end
+
+    resource "unicode_utils" do
+      url "https://rubygems.org/gems/unicode_utils-1.4.0.gem"
+      sha256 "b922d0cf2313b6b7136ada6645ce7154ffc86418ca07d53b058efe9eb72f2a40"
+    end
   end
+
 
 
   def install
