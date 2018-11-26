@@ -9,7 +9,7 @@ set -uxe
 [[ $PWD == *build ]] && cd .. # Go to repo root dir if running from build/
 
 cd mortar
-git fetch origin
+git fetch --tags origin
 
 if [ "${1:-}" == '--latest-stable' ]; then
   latest=$(git tag --sort=committerdate | grep -v -- - | tail -1)
@@ -31,4 +31,4 @@ bundle package
 
 cd ..
 
-ruby build/update_resources.rb "$latest" > Formula/mortar.rb
+ruby build/update_resources.rb "$latest" > Formula/new_formula.rb
