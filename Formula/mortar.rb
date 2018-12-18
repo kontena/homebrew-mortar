@@ -7,8 +7,8 @@ class Mortar < Formula
 
   stable do
     url "https://github.com/kontena/mortar.git",
-    :tag => "v0.3.0",
-    :revision => "56614cbd499ae10a5e1bcf9396d989678600d6ec"
+    :tag => "v0.3.1",
+    :revision => "c0b17985cd9ac5da7e367e7ad154980f2d0840d9"
 
     resource "clamp" do
       url "https://rubygems.org/gems/clamp-1.3.0.gem"
@@ -16,8 +16,8 @@ class Mortar < Formula
     end
 
     resource "concurrent-ruby" do
-      url "https://rubygems.org/gems/concurrent-ruby-1.1.3.gem"
-      sha256 "6b4bf154eb36502635143198425c35fc3262b3c088d7df179704bb5beed409a3"
+      url "https://rubygems.org/gems/concurrent-ruby-1.1.4.gem"
+      sha256 "e12e6ab140d8d99c14763a605b9671a5e182d4bf6dc951d4cb5debe86eeaacc7"
     end
 
     resource "deep_merge" do
@@ -86,13 +86,13 @@ class Mortar < Formula
     end
 
     resource "jsonpath" do
-      url "https://rubygems.org/gems/jsonpath-0.9.6.gem"
-      sha256 "ed341783603cc77315e01fecacc166f5092b6f692ae3cbfadabc0179390d241a"
+      url "https://rubygems.org/gems/jsonpath-0.9.8.gem"
+      sha256 "c98cabe273365707cb3946a2d0a98822698a330d80ad57abf60d5fa9e8a3d8e6"
     end
 
     resource "k8s-client" do
-      url "https://rubygems.org/gems/k8s-client-0.6.2.gem"
-      sha256 "ccc5ca4d2b7a9c831c7d600856430cec0c3a7aed9e74f07a636265b121d34fbd"
+      url "https://rubygems.org/gems/k8s-client-0.6.4.gem"
+      sha256 "ea4d755f8d6675352b57b771a651af3de4ebbb7bd0b818faa5f6216ec481d3d5"
     end
 
     resource "multi_json" do
@@ -159,9 +159,12 @@ class Mortar < Formula
       url "https://rubygems.org/gems/unicode_utils-1.4.0.gem"
       sha256 "b922d0cf2313b6b7136ada6645ce7154ffc86418ca07d53b058efe9eb72f2a40"
     end
+
+    resource "yajl-ruby" do
+      url "https://rubygems.org/gems/yajl-ruby-1.4.1.gem"
+      sha256 "6e32e6e681c2861e99e7389ebcca70d56cb9357b223f09fb0857e2444ee1609b"
+    end
   end
-
-
 
   def install
     ENV["GEM_HOME"] = libexec
