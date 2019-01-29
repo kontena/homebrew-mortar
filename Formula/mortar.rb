@@ -7,8 +7,8 @@ class Mortar < Formula
 
   stable do
     url "https://github.com/kontena/mortar.git",
-    :tag => "v0.3.1",
-    :revision => "c0b17985cd9ac5da7e367e7ad154980f2d0840d9"
+    :tag => "v0.3.2",
+    :revision => "1c76b5942a2550f99d25083a43e4c8340f88aab6"
 
     resource "clamp" do
       url "https://rubygems.org/gems/clamp-1.3.0.gem"
@@ -51,8 +51,8 @@ class Mortar < Formula
     end
 
     resource "dry-logic" do
-      url "https://rubygems.org/gems/dry-logic-0.4.2.gem"
-      sha256 "50720a497a07fc28ccca92b0d392ef793cfaca8c6c7fcdfb9b7c86df8610dfe4"
+      url "https://rubygems.org/gems/dry-logic-0.5.0.gem"
+      sha256 "7bbf67388dc8b0760828decad3eb12db6493e256aabfa471901a3df08ef17105"
     end
 
     resource "dry-struct" do
@@ -61,8 +61,8 @@ class Mortar < Formula
     end
 
     resource "dry-types" do
-      url "https://rubygems.org/gems/dry-types-0.13.3.gem"
-      sha256 "beb6548b40af545e7066a6f8ff0cc156614172cfd31fa0da482f2779c33bea0d"
+      url "https://rubygems.org/gems/dry-types-0.13.4.gem"
+      sha256 "ebf60964d7fe59b0f959c09dc6088d40464d2f39372861f241e76774c1ed34c4"
     end
 
     resource "equatable" do
@@ -76,8 +76,8 @@ class Mortar < Formula
     end
 
     resource "hashdiff" do
-      url "https://rubygems.org/gems/hashdiff-0.3.7.gem"
-      sha256 "e94a08689f724a571556b78d5ca35214033d3961972d58c4611245c4b3a0457a"
+      url "https://rubygems.org/gems/hashdiff-0.3.8.gem"
+      sha256 "532b5ad492806b7bb64152f62cec3bfa7fd06753e16c1fa045e9a0ae6e79d3a7"
     end
 
     resource "ice_nine" do
@@ -86,13 +86,13 @@ class Mortar < Formula
     end
 
     resource "jsonpath" do
-      url "https://rubygems.org/gems/jsonpath-0.9.8.gem"
-      sha256 "c98cabe273365707cb3946a2d0a98822698a330d80ad57abf60d5fa9e8a3d8e6"
+      url "https://rubygems.org/gems/jsonpath-0.9.9.gem"
+      sha256 "f79db515b3d0987d27c2e7038114e0cdacc18e1bc647014a636ce97fe82a35fe"
     end
 
     resource "k8s-client" do
-      url "https://rubygems.org/gems/k8s-client-0.6.4.gem"
-      sha256 "ea4d755f8d6675352b57b771a651af3de4ebbb7bd0b818faa5f6216ec481d3d5"
+      url "https://rubygems.org/gems/k8s-client-0.8.2.gem"
+      sha256 "c0fd24ef4737a7dc28914656a2f69adb1465c7c97a4ccdd9c459751cc4e47bab"
     end
 
     resource "multi_json" do
@@ -151,8 +151,8 @@ class Mortar < Formula
     end
 
     resource "unicode-display_width" do
-      url "https://rubygems.org/gems/unicode-display_width-1.4.0.gem"
-      sha256 "a72802fd6345c0da220e8088b27f1800924b74d222621a06477757769b5e8000"
+      url "https://rubygems.org/gems/unicode-display_width-1.4.1.gem"
+      sha256 "3836b11eda171d92c8c78e1bd21de900b7f7fea3bf83dfab041ac5151d12052f"
     end
 
     resource "unicode_utils" do
@@ -163,6 +163,11 @@ class Mortar < Formula
     resource "yajl-ruby" do
       url "https://rubygems.org/gems/yajl-ruby-1.4.1.gem"
       sha256 "6e32e6e681c2861e99e7389ebcca70d56cb9357b223f09fb0857e2444ee1609b"
+    end
+
+    resource "yaml-safe_load_stream" do
+      url "https://rubygems.org/gems/yaml-safe_load_stream-0.1.1.gem"
+      sha256 "9aee579fc316d1712e3ee01b9ed2676eff2683d9ce58bcc2ade8790c2c414bc6"
     end
   end
 
