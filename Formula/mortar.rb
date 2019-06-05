@@ -7,8 +7,8 @@ class Mortar < Formula
 
   stable do
     url "https://github.com/kontena/mortar.git",
-    :tag => "v0.3.2",
-    :revision => "1c76b5942a2550f99d25083a43e4c8340f88aab6"
+    :tag => "v0.4.0",
+    :revision => "6e7101d874d717328c0e99a5b90c59dcc62e6a0d"
 
     resource "clamp" do
       url "https://rubygems.org/gems/clamp-1.3.0.gem"
@@ -16,8 +16,8 @@ class Mortar < Formula
     end
 
     resource "concurrent-ruby" do
-      url "https://rubygems.org/gems/concurrent-ruby-1.1.4.gem"
-      sha256 "e12e6ab140d8d99c14763a605b9671a5e182d4bf6dc951d4cb5debe86eeaacc7"
+      url "https://rubygems.org/gems/concurrent-ruby-1.1.5.gem"
+      sha256 "5611d14d8699996b17f18e704f4257b73349efa2d9a75fee6566a0a387c807f4"
     end
 
     resource "deep_merge" do
@@ -26,13 +26,13 @@ class Mortar < Formula
     end
 
     resource "dry-configurable" do
-      url "https://rubygems.org/gems/dry-configurable-0.7.0.gem"
-      sha256 "660bbb40b1faba701bca17375c17cbef84310ac0bc2163a6e936394efb86bd98"
+      url "https://rubygems.org/gems/dry-configurable-0.8.3.gem"
+      sha256 "ea61ab71b293265c0b024094db97f3b0f24741f14019ab22ec7de44a00832215"
     end
 
     resource "dry-container" do
-      url "https://rubygems.org/gems/dry-container-0.6.0.gem"
-      sha256 "9672f9eec9fa116212f60a2645e59a56761418dbc87f5bf915b0e51629c0a93c"
+      url "https://rubygems.org/gems/dry-container-0.7.0.gem"
+      sha256 "5a78bb4cb899792dc5f0f4342d1b8385733f5d18037870773fcde29485bfc59a"
     end
 
     resource "dry-core" do
@@ -41,8 +41,8 @@ class Mortar < Formula
     end
 
     resource "dry-equalizer" do
-      url "https://rubygems.org/gems/dry-equalizer-0.2.1.gem"
-      sha256 "41af1919475ff9ff0453efb2e05c9d33dcfc5f7bced1d41c1dce6a8273439e84"
+      url "https://rubygems.org/gems/dry-equalizer-0.2.2.gem"
+      sha256 "beba0376a1490b0db378db249334fa95c809b67ae6e41e4036a42d647611fb77"
     end
 
     resource "dry-inflector" do
@@ -51,8 +51,8 @@ class Mortar < Formula
     end
 
     resource "dry-logic" do
-      url "https://rubygems.org/gems/dry-logic-0.5.0.gem"
-      sha256 "7bbf67388dc8b0760828decad3eb12db6493e256aabfa471901a3df08ef17105"
+      url "https://rubygems.org/gems/dry-logic-0.6.1.gem"
+      sha256 "d17c56a85d938aa083322fb0ff4d87b5400fd24b0b463b275c124fe7d064213a"
     end
 
     resource "dry-struct" do
@@ -76,8 +76,8 @@ class Mortar < Formula
     end
 
     resource "hashdiff" do
-      url "https://rubygems.org/gems/hashdiff-0.3.8.gem"
-      sha256 "532b5ad492806b7bb64152f62cec3bfa7fd06753e16c1fa045e9a0ae6e79d3a7"
+      url "https://rubygems.org/gems/hashdiff-0.3.9.gem"
+      sha256 "9d788399acc8e0a9937c9647f1c099f1c44e42e92718cd3f486c44eb542251e2"
     end
 
     resource "ice_nine" do
@@ -91,8 +91,8 @@ class Mortar < Formula
     end
 
     resource "k8s-client" do
-      url "https://rubygems.org/gems/k8s-client-0.8.2.gem"
-      sha256 "c0fd24ef4737a7dc28914656a2f69adb1465c7c97a4ccdd9c459751cc4e47bab"
+      url "https://rubygems.org/gems/k8s-client-0.10.1.gem"
+      sha256 "b5683502ad22e2bb762586dc9444024319ec58cb028378993cc8bd12a4264ea6"
     end
 
     resource "multi_json" do
@@ -121,8 +121,8 @@ class Mortar < Formula
     end
 
     resource "strings" do
-      url "https://rubygems.org/gems/strings-0.1.4.gem"
-      sha256 "cab79f5b836b850cc63ee38fddc1d3ccb627cf303646f0a706d82c270a2b35de"
+      url "https://rubygems.org/gems/strings-0.1.5.gem"
+      sha256 "f12880759c16a6b7f048ebaa2577fdc74490e753f67d508610624628653e47b2"
     end
 
     resource "strings-ansi" do
@@ -151,8 +151,8 @@ class Mortar < Formula
     end
 
     resource "unicode-display_width" do
-      url "https://rubygems.org/gems/unicode-display_width-1.4.1.gem"
-      sha256 "3836b11eda171d92c8c78e1bd21de900b7f7fea3bf83dfab041ac5151d12052f"
+      url "https://rubygems.org/gems/unicode-display_width-1.6.0.gem"
+      sha256 "5cfcc08491f3978e8506b5527d9e871beeffe2b5dacc62df78fb86a9a28d6e22"
     end
 
     resource "unicode_utils" do
