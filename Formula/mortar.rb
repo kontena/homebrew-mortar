@@ -7,12 +7,12 @@ class Mortar < Formula
 
   stable do
     url "https://github.com/kontena/mortar.git",
-    :tag => "v0.4.2",
-    :revision => "8308cbf59ca30231d46161238e0ffbffaf8aea0e"
+    :tag => "v0.4.3",
+    :revision => "3b25f7cea3be17999a5592adf00d9ba392e3b957"
 
     resource "clamp" do
-      url "https://rubygems.org/gems/clamp-1.3.0.gem"
-      sha256 "1c466e93c14ed78078a428990f113b30f256189ec76f682f759e5aa2a181acfb"
+      url "https://rubygems.org/gems/clamp-1.3.1.gem"
+      sha256 "0975e919dc76cfb1a63264fec5c2b97c4bba54cbdec7894ab9e77f0e87436a36"
     end
 
     resource "concurrent-ruby" do
@@ -31,13 +31,13 @@ class Mortar < Formula
     end
 
     resource "dry-container" do
-      url "https://rubygems.org/gems/dry-container-0.7.0.gem"
-      sha256 "5a78bb4cb899792dc5f0f4342d1b8385733f5d18037870773fcde29485bfc59a"
+      url "https://rubygems.org/gems/dry-container-0.7.2.gem"
+      sha256 "a071824ba3451048b23500210f96a2b9facd6e46ac687f65e49c75d18786f6da"
     end
 
     resource "dry-core" do
-      url "https://rubygems.org/gems/dry-core-0.4.7.gem"
-      sha256 "92815b6e05aa0666cab39d1ae03b97653b0e17a9f5b96d5ffd218cf46e59ef8e"
+      url "https://rubygems.org/gems/dry-core-0.4.9.gem"
+      sha256 "f36e0241833ea45e3ad1a6da48e5d32d1b5b8dd91fb24adee7b17a92b5702e4d"
     end
 
     resource "dry-equalizer" do
@@ -71,13 +71,13 @@ class Mortar < Formula
     end
 
     resource "excon" do
-      url "https://rubygems.org/gems/excon-0.62.0.gem"
-      sha256 "624dfbd6659dfdbefd213019d94598c4d47a713936819b6bb729303412e08996"
+      url "https://rubygems.org/gems/excon-0.67.0.gem"
+      sha256 "e264d6eeb58a8b1f5e2e6bf0c1edd5376c134be942e03dd63262ba48e01347ec"
     end
 
     resource "hashdiff" do
-      url "https://rubygems.org/gems/hashdiff-0.3.9.gem"
-      sha256 "9d788399acc8e0a9937c9647f1c099f1c44e42e92718cd3f486c44eb542251e2"
+      url "https://rubygems.org/gems/hashdiff-1.0.0.gem"
+      sha256 "b38aaa4481afb345b87cc6675ac67ff20003805e6d42e0fac096e616f7ba58a2"
     end
 
     resource "ice_nine" do
@@ -91,8 +91,8 @@ class Mortar < Formula
     end
 
     resource "k8s-client" do
-      url "https://rubygems.org/gems/k8s-client-0.10.1.gem"
-      sha256 "b5683502ad22e2bb762586dc9444024319ec58cb028378993cc8bd12a4264ea6"
+      url "https://rubygems.org/gems/k8s-client-0.10.4.gem"
+      sha256 "ae2ed5c123c30062141889fb463cac7d11c4e67540177804e935953ae87872cb"
     end
 
     resource "multi_json" do
@@ -116,13 +116,13 @@ class Mortar < Formula
     end
 
     resource "rouge" do
-      url "https://rubygems.org/gems/rouge-3.3.0.gem"
-      sha256 "140fb42bd45cde9c11bd5ea2fee3d1e6d10204d7aa33ac37eadf73a445d42fb6"
+      url "https://rubygems.org/gems/rouge-3.11.0.gem"
+      sha256 "abf9116b93fb32a3f59dbea3d82c4ede2d842a5132b842f1a56766bc94d95eff"
     end
 
     resource "strings" do
-      url "https://rubygems.org/gems/strings-0.1.5.gem"
-      sha256 "f12880759c16a6b7f048ebaa2577fdc74490e753f67d508610624628653e47b2"
+      url "https://rubygems.org/gems/strings-0.1.6.gem"
+      sha256 "02cd245234c2a5331995763269ae147663109a17d845a8f68e783e0af2766af7"
     end
 
     resource "strings-ansi" do
