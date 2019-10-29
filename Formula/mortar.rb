@@ -7,7 +7,7 @@ class Mortar < Formula
 
   stable do
     url "https://github.com/kontena/mortar.git",
-    :tag => "v0.4.6",
+    :tag => "v0.4.7",
     :revision => "01ffa532f6b6af2b728c6c33d4d79d1a3e143553"
 
     resource "clamp" do
