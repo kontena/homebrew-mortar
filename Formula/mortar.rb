@@ -7,8 +7,8 @@ class Mortar < Formula
 
   stable do
     url "https://github.com/kontena/mortar.git",
-    :tag => "v0.4.5",
-    :revision => "89bd48bcef16c39e207f2d08aa994a7c24ba54f1"
+    :tag => "v0.4.6",
+    :revision => "01ffa532f6b6af2b728c6c33d4d79d1a3e143553"
 
     resource "clamp" do
       url "https://rubygems.org/gems/clamp-1.3.1.gem"
@@ -46,8 +46,8 @@ class Mortar < Formula
     end
 
     resource "dry-inflector" do
-      url "https://rubygems.org/gems/dry-inflector-0.1.2.gem"
-      sha256 "121ffcf8c4d4b5daa421a2ae9507aa92ebf085ebf7b4be3fcba03bebd499d14a"
+      url "https://rubygems.org/gems/dry-inflector-0.2.0.gem"
+      sha256 "c7cf29c3dc9d961c115aac873ac39a4ff6988fae7f7871c473a9694c1f6fb39e"
     end
 
     resource "dry-logic" do
@@ -71,8 +71,8 @@ class Mortar < Formula
     end
 
     resource "excon" do
-      url "https://rubygems.org/gems/excon-0.67.0.gem"
-      sha256 "e264d6eeb58a8b1f5e2e6bf0c1edd5376c134be942e03dd63262ba48e01347ec"
+      url "https://rubygems.org/gems/excon-0.68.0.gem"
+      sha256 "f043591b4575d44d97ea84838639b0ebca76fa39bd461dda8f49d3c0fd423272"
     end
 
     resource "hashdiff" do
@@ -96,8 +96,8 @@ class Mortar < Formula
     end
 
     resource "multi_json" do
-      url "https://rubygems.org/gems/multi_json-1.13.1.gem"
-      sha256 "db8613c039b9501e6b2fb85efe4feabb02f55c3365bae52bba35381b89c780e6"
+      url "https://rubygems.org/gems/multi_json-1.14.1.gem"
+      sha256 "d971296c0eacea289d31e4a7ab7ac5eda97262c62bbc8c110de4f5e36425c577"
     end
 
     resource "necromancer" do
@@ -116,8 +116,8 @@ class Mortar < Formula
     end
 
     resource "rouge" do
-      url "https://rubygems.org/gems/rouge-3.11.0.gem"
-      sha256 "abf9116b93fb32a3f59dbea3d82c4ede2d842a5132b842f1a56766bc94d95eff"
+      url "https://rubygems.org/gems/rouge-3.12.0.gem"
+      sha256 "fcb3203f4bab7e8cabc20cfa8009f65a3bd5b50f542be9ecc5ba6c0c57b7d721"
     end
 
     resource "strings" do
